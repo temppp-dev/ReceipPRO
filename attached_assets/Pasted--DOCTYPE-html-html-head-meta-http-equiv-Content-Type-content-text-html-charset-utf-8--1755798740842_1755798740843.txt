@@ -1,0 +1,766 @@
+<!DOCTYPE html><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        /* Basic style placeholders. You can refine as needed. */
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+        }
+
+        .main-table {
+            width: 660px;
+        }
+
+        .apple-logo-td {
+            padding-top: 32px;
+        }
+
+        .heading-email {
+            font-family: 'SF UI Display Medium', system, -apple-system, -webkit-system-font, 'SFNSText', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            color: #333333;
+            line-height: 47px;
+            font-size: 34px;
+            margin: 0 0 2px 0;
+        }
+
+        .sub-heading {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 24px;
+            color: #333333;
+            margin: 0;
+            padding-top: 13px;
+        }
+
+        .order-num-td {
+            padding-bottom: 14px;
+        }
+
+        .moe-line-col {
+            background-color: #D6D6D6 !important;
+            font-size: 1px !important;
+            height: 1px !important;
+        }
+
+        /* HEADINGS AT 22PX */
+        .section-heading-table {
+            width: 29%;
+        }
+        .section-items-heading-td {
+            font-family: 'SF UI Display Medium', system, -apple-system, -webkit-system-font, SFNSText, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            letter-spacing: 0px;
+            font-size: 22px;
+            line-height: 27px;
+            margin: 0px;
+            color: #333333;
+        }
+        .sectionHeading {
+            font-family: 'SF UI Display Medium', system, -apple-system, -webkit-system-font, SFNSText, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            letter-spacing: 0px;
+            font-size: 22px;
+            line-height: 27px;
+            margin: 0px;
+            color: #333333;
+        }
+
+        .product-list-table {
+            width: 66.5%;
+        }
+
+        .pad-lr {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .gap-30 {
+            height: 21px;
+            font-size: 21px;
+            line-height: 21px;
+        }
+
+        .gap-24 {
+            height: 28px;
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        .product-image-td {
+            padding-right: 10px;
+        }
+
+        .product-image-img {
+            display: block;
+            outline: none;
+        }
+
+        .product-name-td {
+            font-weight: 600;
+            letter-spacing: 0px;
+            font-size: 17px;
+            line-height: 26px;
+            color: #333333;
+            margin: 0;
+        }
+
+        .base-price-td {
+            padding-top: 6px;
+            font-size: 17px;
+            line-height: 26px;
+            color: #333333;
+        }
+
+        .qty-price-divider {
+            padding-top: 6px;
+        }
+
+        .moe-line-col div {
+            background-color: #D6D6D6;
+        }
+
+        .qty-price-td {
+            padding-top: 6px;
+        }
+
+        .payment-section-td {
+            padding-top: 43px;
+            padding-bottom: 32px;
+        }
+
+        .section-details-table {
+            width: 66.5%;
+        }
+
+        .section-details-td {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 26px;
+            color: #333333;
+        }
+
+        .amts-section-td {
+            padding-bottom: 42px;
+        }
+
+        .amt-row-table {
+            width: 66.5%;
+        }
+
+        .amt-row-td {
+            width: 100%;
+            padding-top: 4px;
+        }
+
+        .amt-label-td {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333333;
+            font-size: 17px;
+            line-height: 24px;
+        }
+
+        .amt-value-td {
+            white-space: nowrap;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 24px;
+            color: #333333;
+        }
+
+        .note-td {
+            padding-top: 16px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 21px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="margin:0px; padding-bottom:0px;">
+        <tbody>
+        <tr>
+            <td align="center">
+                <!-- MAIN WRAPPER -->
+                <table class="main-table" cellpadding="0" cellspacing="0" border="0" width="660" align="center">
+                    <tbody>
+                    <!-- Apple Logo -->
+                    <tr>
+                        <td class="apple-logo-td" valign="top" align="left">
+                            <img src="https://email.images.apple.com/rover/aos/moe/apple_icon_2x.png" alt="Apple" border="0" height="25" width="auto" style="display:block;outline:none;">
+                        </td>
+                    </tr>
+
+                    <!-- Greeting -->
+                    <tr>
+                        <td valign="top" align="left" style="padding-top:75px; padding-bottom:51px;">
+                            <h1 class="heading-email">
+                                Thank you for your order.
+                            </h1>
+                            <p class="sub-heading">
+                                One or more of your items will be delivered by a courier service.<br>
+                                Someone must be present to receive these items.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Order Number & Ordered on -->
+                    <tr>
+                        <td class="order-num-td">
+                            <div style="color:#333333; font-weight:normal; font-size:14px; line-height:21px; margin:0px;">
+                                <span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:600;">
+                                    Order Number:
+                                </span>
+                                <span style="color:#0070C9; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+                                    <a href="https://store.apple.com" style="color:#0070c9; font-weight:normal;" rel="noreferrer nofollow noopener" target="_blank" aria-label="Order Number">
+                                        W4204629698
+                                    </a>
+                                </span>
+                            </div>
+                            <div style="color:#333333; font-weight:normal; font-size:14px; line-height:21px; margin:0px;">
+                                <span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:600;">
+                                    Ordered on:
+                                </span>
+                                <span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal;">
+                                    Friday, July 25
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Horizontal line -->
+                    <tr>
+                        <td align="left" height="1" bgcolor="D6D6D6" valign="top" class="moe-line-col">
+                            <div style="background-color:#D6D6D6; height:1px; font-size:1px;"></div>
+                        </td>
+                    </tr>
+
+                    <!-- Items to be Dispatched -->
+                    <tr>
+                        <td valign="top" align="center">
+                            <table class="render-lineitems-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-top:43px;">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="section-heading-table" border="0" cellpadding="0" cellspacing="0" width="29%" align="left">
+                                            <tbody>
+                                            <tr>
+                                                <td class="section-items-heading-td" valign="top" align="left">
+                                                    <h2 class="sectionHeading">Items to be Dispatched</h2>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <!-- Right side: "Shipment 1" & Delivery info -->
+                                        <table class="product-list-table" width="66.5%" align="right" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td class="pad-lr" valign="top" align="left">
+                                                    <div style="padding-bottom:3px; font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:600; font-size:17px; line-height:26px; color:#333333; margin:0;">
+                                                        Shipment 1
+                                                    </div>
+                                                    <div style="font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; font-size:17px; line-height:26px; color:#333333;">
+                                                        <span style="font-weight:600;">Delivery:</span>
+                                                        Tuesday, July 29
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <!-- Product Row -->
+                                            <tr>
+                                                <td valign="top" align="left">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="left" width="100%">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="pad-lr" align="left" valign="top">
+                                                                <table align="center" width="100%" style="width:100%; min-width:100%;" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td class="gap-30"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="moe-line-col" bgcolor="D6D6D6" height="1" align="left" valign="top">
+                                                                            <div style="background-color:#D6D6D6; height:1px; font-size:1px;"></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="gap-24"></td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <!-- Item detail row -->
+                                                    <table align="left" width="100%" cellpadding="0" cellspacing="0" border="0" class="line-item-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="product-image-td" valign="top" align="center" width="96">
+                                                                <img src="https://cdn.discordapp.com/ephemeral-attachments/1342020267844833314/1398412575691116775/CITYPNG.COMApple_Airpods_2_Opened_Case_Wireless_Headset_-_800x800.png?ex=688544b3&amp;is=6883f333&amp;hm=85c88594eaf457910f2f693a8376ec24b046869440c4fac55d197298a213faff&amp;" alt="image" width="100px" style="display:block;outline:none;" class="product-image-img">
+                                                            </td>
+                                                            <td valign="top" align="left">
+                                                                <table align="left" width="100%" cellpadding="0" cellspacing="0" border="0" class="item-details-table">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td class="product-name-td" align="left" valign="top">
+                                                                            AirPods (2nd generation)
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="base-price-td" align="left">
+                                                                            $189.95
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="qty-price-divider" width="100%">
+                                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="height:1px; font-size:1px; line-height:1px;">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td class="moe-line-col" bgcolor="D6D6D6" height="1" align="left" valign="top">
+                                                                                        <div style="background-color:#D6D6D6; font-size:1px; height:1px;"></div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding-top:6px;">
+                                                                            <table align="left" width="45%" cellpadding="0" cellspacing="0" border="0" class="product-quantity-table">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" style="font-size:17px; line-height:26px; color:#333333;">
+                                                                                        Qty 1
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <table align="right" width="50%" cellpadding="0" cellspacing="0" border="0" class="total-price-table">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td align="right" style="font-weight:600; font-size:17px; line-height:26px; color:#333333;">
+                                                                                        $189.95
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- Shipping Address -->
+                            <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="section-details-table" align="right" width="66.5%" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td class="section-details-td" valign="top" align="left">
+                                                    <table align="center" width="100%" style="min-width:100%;" border="0" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="height:30px; font-size:30px; line-height:30px; min-width:100%;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="moe-line-col" bgcolor="D6D6D6" height="1" valign="top" align="left">
+                                                                <div style="background-color:#D6D6D6; height:1px; font-size:1px;"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="height:30px; font-size:30px; line-height:30px; min-width:100%;"></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <h3 style="font-weight:600; font-size:17px; line-height:26px; color:#333333; margin:0;" class="subsec-heading">
+                                                        Shipping Address:
+                                                    </h3>
+                                                    <div style="width:100%; font-size:17px; line-height:26px; color:#333333;">
+                                                        Anthony Thompson
+                                                    </div>
+                                                    <div style="width:100%; font-size:17px; line-height:26px; color:#333333;">
+                                                        27 N 28TH ST APT 15C1 LAS VEGAS NV 89101-4686 USA
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- Horizontal separator -->
+                            <table align="center" width="100%" style="min-width:100%;" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td style="height:41px; font-size:41px; line-height:41px; min-width:100%;"></td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="D6D6D6" height="1" valign="top" align="left" class="moe-line-col">
+                                        <div style="background-color:#D6D6D6; height:1px; font-size:1px;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height:1px; font-size:1px; line-height:1px; min-width:100%;"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Billing & Payment -->
+                    <tr>
+                        <td class="payment-section-td" style="padding-top:43px; padding-bottom:32px;">
+                            <table width="29%" class="section-heading-table" align="left" cellspacing="0" cellpadding="0" border="0" style="width:29%">
+                                <tbody>
+                                <tr>
+                                    <td class="section-items-heading-td" valign="top" align="left">
+                                        <h2 class="sectionHeading">Billing and Payment</h2>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="section-details-table" width="66.5%" align="right" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                <tr>
+                                    <td class="section-details-td" valign="top" align="left">
+                                        <h3 style="font-weight:600; font-size:17px; line-height:26px; color:#333333; margin:0;" class="subsec-heading">
+                                            Bill To:
+                                        </h3>
+                                        <div style="width:100%; font-size:17px; line-height:26px; color:#333333;">
+                                            Anthony Thompson
+                                        </div>
+
+                                        <h3 style="padding-top:23px; font-weight:600; font-size:17px; line-height:26px; color:#333333; margin:0;" class="subsec-heading">
+                                            Billing Address:
+                                        </h3>
+                                        <div style="width:100%; font-size:17px; line-height:26px; color:#333333;">
+                                            27 N 28TH ST APT 15C1 LAS VEGAS NV 89101-4686 USA
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Amounts / Totals -->
+                    <tr>
+                        <td class="amts-section-td" align="center">
+                            <table class="amt-row-table" width="66.5%" align="right" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                <tr>
+                                    <td align="center">
+                                        <table width="100%" style="min-width:100%;" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td style="height:1px; font-size:1px; line-height:1px; min-width:100%;"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="moe-line-col" bgcolor="D6D6D6" height="1" align="left" valign="top">
+                                                    <div style="background-color:#D6D6D6; height:1px; font-size:1px;"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="height:18px; font-size:18px; line-height:18px; min-width:100%;"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Bag Subtotal -->
+                                <tr>
+                                    <td class="amt-row-td">
+                                        <table class="amt-label-table" width="49%" align="left" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td class="amt-label-td" valign="top" align="left">
+                                                    Bag Subtotal
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="amt-value-table" width="49%" align="right" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td class="amt-value-td" align="right" valign="top" nowrap="">
+                                                    <nobr>$0</nobr>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Delivery Amount -->
+                                <tr>
+                                    <td class="amt-row-td">
+                                        <table class="amt-label-table" width="49%" align="left" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td class="amt-label-td" align="left" valign="top" style="color:#339900;">
+                                                    Delivery
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="amt-value-table" width="49%" align="right" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td class="amt-value-td" align="right" valign="top" nowrap="" style="color:#339900;">
+                                                    <nobr>$50</nobr>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Divider line -->
+                                <tr>
+                                    <td class="amt-row-td">
+                                        <table class="amt-divider-table" width="100%" align="right" cellpadding="0" cellspacing="0" border="0" style="margin-top:11px;">
+                                            <tbody>
+                                            <tr>
+                                                <td class="amt-divider" bgcolor="D6D6D6" height="1" align="left" valign="top" style="background-color:#D6D6D6;"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Order Total -->
+                                <tr>
+                                    <td class="amt-row-td">
+                                        <table class="amt-label-table" width="49%" align="left" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td class="amt-label-td" style="font-weight:600;" valign="top" align="left">
+                                                    Order Total
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="amt-value-table" width="49%" align="right" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td class="amt-value-td" style="font-weight:600;" align="right" valign="top" nowrap="">
+                                                    <nobr>$239.95</nobr>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Invoice note -->
+                                <tr>
+                                    <td class="note-td" align="left" valign="top">
+                                        Your invoice will be sent via email 2–3 business days after receipt of your order.
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Apple store icon + "Shop in the Apple Store app" -->
+                    <tr>
+                       <td style="height:20px; font-size:1px; line-height:20px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding:10px 0;">
+                        <!-- Apple store icon (42x42) -->
+                        <img src="https://email.images.apple.com/rover/aos/global/icon-asa-curved-border.jpg" alt="Apple Store app" title="Apple Store app" border="0" height="42" width="42" style="display:block; margin:0 auto;">
+                        <h2 style="font-family:'SF UI Display Medium',system,-apple-system,-webkit-system-font,SFNSText,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:500;letter-spacing:0px;font-size:22px;line-height:27px;margin:15px 0 0;color:rgb(51,51,51)">
+                          Shop in the Apple Store app,<br>tailored specifically for you
+                        </h2>
+                        <div style="font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17px;line-height:26px;color:#333333;padding-top:14px;">
+                          Get personalized product recommendations, compare models, access Your Saves, and track your orders. Plus, opt in today to get updates on new products, promotions, flexible payment options, and store events.
+                        </div>
+                        <div style="font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17px;line-height:26px;color:#333333;padding-top:14px;">
+                          Scan the QR code or tap the link to get started.
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-bottom:28px;" align="center">
+                        <img src="https://email.images.apple.com/rover/aos/common/ASANT-DT-ORD.png" alt="Apple Store app" title="Apple Store app" border="0" height="160" width="160" style="display:block; margin:0 auto;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding-bottom:28px;">
+                        <div style="font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17px;line-height:26px;color:#333333;">
+                          <a href="https://www.apple.com/go/notifications?cid=TRX-EMAIL-ASANT-MB-ORD" style="color:#0070C9;" target="_blank">
+                            Download the Apple Store app ›
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <!-- 'Questions' section -->
+                    <tr>
+                      <td style="padding-bottom:30px;">
+                        <table width="29%" class="section-heading-table" align="left" cellpadding="0" cellspacing="0" border="0" style="width:29%;">
+                          <tbody>
+                            <tr>
+                              <td class="section-items-heading-td" valign="top" align="left">
+                                <h2 class="sectionHeading">Questions</h2>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table class="answers-table" width="66.5%" align="right" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td class="answers-td" style="font-size:17px; line-height:26px; color:#333333; font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;" valign="top" align="left">
+                                <h3 style="font-weight:600; font-size:17px; line-height:26px; color:#333333; margin:0;">
+                                  When will I get my items?
+                                </h3>
+                                <div style="padding-bottom:23px;">
+                                  The shipping estimates above tell you when your items are expected to arrive. As each item leaves our warehouse, we’ll email you with delivery and tracking information.
+                                  <div style="padding-top:12px;">
+                                    Ordered more than one item? You’ll get a separate email as each item ships. There are no additional shipping fees for these items.
+                                  </div>
+                                </div>
+                                <h3 style="font-weight:600; font-size:17px; line-height:26px; color:#333333; margin:0;">
+                                  How do I view or change my order?
+                                </h3>
+                                <div style="padding-bottom:23px;">
+                                  Visit online <a style="color:#0070C9;" href="https://store.apple.com/us/help/" target="_blank" rel="noopener">Order Status</a> to view the most up-to-date status and make changes to your order. To learn more about shipping, changing your order, or returns, please visit online <a style="color:#0070C9;" href="https://store.apple.com/us/help/" target="_blank" rel="noopener">Help</a>.
+                                  <div style="padding-top:12px;">
+                                    You can also call Apple Support at 800-692-7753 Monday through Friday from 9:00 a.m. to 9:00 p.m. and Saturday from 9:00 a.m. to 6:00 p.m. Pacific time.
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- Footer container (Shop Online, etc.) -->
+                    <tr>
+                        <td style="margin:0; padding-top:19px; padding-bottom:13px; background-color:#F2F2F2;" bgcolor="F2F2F2" align="center">
+                            <table class="footer-section-table" width="660" bgcolor="F2F2F2" cellpadding="0" cellspacing="0" border="0" align="center">
+                                <tbody>
+                                <tr>
+                                    <td style="padding-left:16px; padding-right:16px;">
+                                        <table class="footer-menu-table" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="padding-bottom:14px; border-bottom:1px solid #D6D6D6;">
+                                            <tbody>
+                                            <tr>
+                                                <td style="font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#888888; font-size:12px; line-height:18px;" align="center" valign="top">
+                                                    <!-- Inline menu -->
+                                                    <table width="auto" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size:12px; line-height:18px; color:#888888;">
+                                                                <a style="color:#888888;" href="https://store.apple.com/us" target="_blank" rel="noopener">Shop Online</a>
+                                                                <span style="color:#D6D6D6;" aria-hidden="true">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="auto" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size:12px; line-height:18px; color:#888888;">
+                                                                <a style="color:#888888;" href="https://www.apple.com/retail/" target="_blank" rel="noopener">Find a Store</a>
+                                                                <span style="color:#D6D6D6;" aria-hidden="true">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="auto" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size:12px; line-height:18px; color:#888888;">
+                                                                <span style="white-space:nowrap; color:#888888;">800-692-7753</span>
+                                                                <span style="color:#D6D6D6;" aria-hidden="true">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="auto" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size:12px; line-height:18px; color:#888888;">
+                                                                <a style="color:#888888;" href="https://store.apple.com/us/go/app" target="_blank" rel="noopener">Get the Apple Store App</a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Footer disclaimers -->
+                                <tr>
+                                    <td style="padding-left:16px; padding-right:16px; font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#888888; font-size:11px; line-height:16px;">
+                                        <div style="width:100%; padding-top:20px;">
+                                            Apple Distribution International Ltd., Hollyhill Industrial Estate, Hollyhill, Cork, Republic of Ireland.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left:16px; padding-right:16px; font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#888888; font-size:11px; line-height:16px;">
+                                        <div style="padding-top:19px;">
+                                            Copyright © 2025 <a style="text-decoration:none!important; color:#888888!important;" href="#" target="_blank" rel="noopener">Apple Inc.</a> All rights reserved.
+                                        </div>
+                                        <div style="padding-top:16px;">
+                                            <a style="color:#555555;" href="https://www.apple.com/legal/terms/site.html" target="_blank" rel="noopener">Terms of Use</a>
+                                            &nbsp; <span style="color:#D6D6D6;" aria-hidden="true">|</span> &nbsp;
+                                            <a style="color:#555555;" href="https://www.apple.com/privacy/" target="_blank" rel="noopener">Privacy Policy</a>
+                                            &nbsp; <span style="color:#D6D6D6;" aria-hidden="true">|</span> &nbsp;
+                                            <a style="color:#555555;" href="https://www.apple.com/shop/browse/open/salespolicies" target="_blank" rel="noopener">Sales and Refunds</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left:16px; padding-right:16px; padding-top:10px; color:#6f6f6f; font-size:11px; line-height:16px;">
+                                        <!-- If you want disclaimers about warranty, add them here -->
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</center>
+</body>
+</html>ny5N{
